@@ -1,0 +1,5 @@
+<ul>
+	<li ng-repeat="entry in list">
+		<a ng-click="redirectTo(entry.name, '/stores/' + entry.encodedUrl)">{{ entry.name }}</a>
+	</li>
+</ul>

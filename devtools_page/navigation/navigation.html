@@ -1,0 +1,6 @@
+<ul class="navigation clearfix">
+	<li class="root" ng-click="redirectTo(-1, '/databases')"></li>
+	<li class="entry" ng-repeat="breadcrumb in breadcrumbs">
+		<a ng-click="redirectTo($index, breadcrumb.url)">{{ breadcrumb.name }}</a>
+	</li>
+</ul>

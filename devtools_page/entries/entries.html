@@ -1,0 +1,11 @@
+<div class="entries clearfix">
+	<div class="entries-ids">
+		<ul>
+			<li ng-repeat="entry in entries" ng-click="setSelectedEntry(entry)" ng-class="{ active: isSelectedEntry(entry) }">{{ entry[idColumn] }}</li>
+		</ul>
+	</div>
+
+	<div class="entries-detail">
+		<pre ng-class="{ hidden: !hasSelectedEntry() }" >{{ selectedEntry | debug }}</pre>
+	</div>
+</div>

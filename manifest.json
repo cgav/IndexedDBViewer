@@ -1,0 +1,17 @@
+{
+	"name": "IndexedDB Viewer",
+	"version": "1.0",
+	"manifest_version": 2,
+	"minimum_chrome_version": "23.0",
+	"devtools_page": "devtools_page/index.html",
+	"background": {
+		"page": "background.html"
+	},
+	"content_scripts": [{
+		"matches": ["*://*/*"],
+		"js": [
+			"content.js"
+		],
+		"run_at": "document_idle"
+	}]
+}

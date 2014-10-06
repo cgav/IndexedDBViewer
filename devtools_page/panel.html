@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html ng-app="indexeddb-viewer-app">
+	<head>
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<h1>IndexedDB Viewer</h1>
+
+		<navigation></navigation>
+
+		<div ng-view></div>
+
+		<button>Import DB from *.json</button>
+		<button>Add new entry</button>
+		<button>Delete entry</button>
+
+		<!-- scripts -->
+		<script src="../bower_components/angular/angular.js"></script>
+		<script src="../bower_components/angular-route/angular-route.js"></script>
+
+		<script src="panel.js"></script>
+
+		<script src="utilities/LoggerService.js"></script>
+		<script src="utilities/DebugFilter.js"></script>
+		<script src="utilities/_.js"></script>
+
+		<script src="navigation/NavigationController.js"></script>
+		<script src="navigation/NavigationDirective.js"></script>
+		<script src="navigation/NavigationService.js"></script>
+		<script src="navigation/_.js"></script>
+
+		<script src="databases/DatabaseController.js"></script>
+		<script src="databases/DatabaseService.js"></script>
+		<script src="databases/_.js"></script>
+
+		<script src="stores/StoreController.js"></script>
+		<script src="stores/StoreService.js"></script>
+		<script src="stores/_.js"></script>
+
+		<script src="entries/EntryController.js"></script>
+		<script src="entries/EntryService.js"></script>
+		<script src="entries/_.js"></script>
+		<!-- /scripts -->
+	</body>
+</html>
